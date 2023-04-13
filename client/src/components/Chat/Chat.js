@@ -23,7 +23,7 @@ const Chat = ({ location }) => {
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
-    socket = io(ENDPOINT);
+    socket = io(ENDPOINT,{ transports: ['websocket', 'polling', 'flashsocket'] });
 
     setRoom(room);
     setName(name)
@@ -66,11 +66,3 @@ const Chat = ({ location }) => {
 }
 
 export default Chat;
-
-// import React from "react";
-
-// const Chat = () => {
-//     return React.createElement("h1", null, "Chat");
-// }
-
-// export default Chat;
