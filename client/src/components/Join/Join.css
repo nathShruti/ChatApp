@@ -39,10 +39,10 @@ html, body {
   }
   
   .button {
-      color: #020303 !important;
+      color: #fff !important;
       text-transform: uppercase;
       text-decoration: none;
-      background: #05f79e;
+      background: #0217fa;
       padding: 20px;
       border-radius: 5px;
       display: inline-block;
