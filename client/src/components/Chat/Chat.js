@@ -32,7 +32,7 @@ const Chat = ({ location }) => {
       if(error) {
         alert(error);
       }
-    });
+    }); // eslint-disable-next-line
   }, [ENDPOINT, location.search]);
   
   useEffect(() => {
